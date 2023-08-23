@@ -5,10 +5,10 @@
 extern char **environ;
 int main(void)
 {
-int i = 0;
-while (environ[i] != NULL)
+int u = 0;
+while (environ[u] != NULL)
 {
-printf("%s\n", environ[i]);
-i++;
+printf("%s\n", environ[u]);
+u++;
 }
 }

@@ -1,3 +1,4 @@
+#include "main.h"
 #include <stdio.h>
 #include <string.h>
 /**
@@ -7,7 +8,7 @@
 void mickey(const char *str, char delim)
 {
 	int length = strlen(str);
-	char write[length + 1];
+	char *write = malloc(sizeof(char));
 	int u, g;
 
 	for (u = 0; u <= length; u++)

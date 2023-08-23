@@ -24,8 +24,7 @@ int main(void)
 			
 			return (1);
 		}
-	}
-	if (piki_pid == 0)
+		if (piki_pid == 0)
 	{
 		execve("/usr/bin/ls", args, NULL);
 		perror("Error:");
@@ -35,4 +34,5 @@ int main(void)
 	{
 		wait(&status);
 	}
+}
 }

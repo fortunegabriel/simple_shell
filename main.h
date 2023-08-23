@@ -52,28 +52,28 @@ typedef struct liststr
 } list_t;
 
 /**
- * struct passinfo - contains pseudo-arguements to pass into a function,
- * allowing uniform prototype for function pointer struct
- * @arg: a string generated from getline containing arguements
- * @argv:an array of strings generated from arg
- * @path: a string path for the current command
- * @argc: the argument count
- * @line_count: the error count
- * @err_num: the error code for exit()s
- * @linecount_flag: if on count this line of input
- * @fname: the program filename
- * @env: linked list local copy of environ
- * @environ: custom modified copy of environ from LL env
- * @history: the history node
- * @alias: the alias node
- * @env_changed: on if environ was changed
- * @status: the return status of the last exec'd command
- * @cmd_buf: address of pointer to cmd_buf, on if chaining
- * @cmd_buf_type: CMD_type ||, &&, ;
- * @readfd: the fd from which to read line input
- * @histcount: the history line number count
+ * struct passinfo – Qurral.
+ * @arg: An alpha with queral.
+ * @argv: An alpha.
+ * @path: Shows the direction.
+ * @argc: The queral pass.
+ * @amount: The Faculty pass.
+ * @err_num: Must be go.
+ * @amount_flag: What I have done.
+ * @fname: The zile null.
+ * @env: A wan does.
+ * @environ: The eco.
+ * @history: The tradition.
+ * @alias: The this must.
+ * @env_changed: The work.
+ * @status: It’s a must.
+ * @cmd_blue: IP .
+ * @cmd_blue_type: CMD_type ||, &&, ;
+ * @movemark: The correct.
+ * @histogragram: The integer xount.
  */
 typedef struct passinfo
+
 {
 	char *arg;
 	char **argv;
@@ -194,7 +194,7 @@ void set_info(info_t *, char **);
 void free_info(info_t *, int);
 
 /* toem_environ.c */
-char *_getenv(info_t *, const char *);
+char *secure_getenv(const char *name);
 int _myenv(info_t *);
 int _mysetenv(info_t *);
 int _myunsetenv(info_t *);
